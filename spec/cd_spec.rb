@@ -13,7 +13,7 @@ describe Cd do
     @cd1 = Cd.new('Yellow', 39.99, 10, 'Coldplay', 45)
   end
 
-  describe Initialization do
+  describe 'Initialization' do
     it 'should be an instance of Cd' do
       expect(@cd1).to be_instance_of Cd
     end
@@ -34,12 +34,12 @@ describe Cd do
     end
 
     it 'can read price of cd' do
-      expect(@bluray1.price).to eq('39.99')
+      expect(@cd1.price).to eq(39.99)
     end
 
     it 'can assign price of cd' do
-      @cd1.price = '49.99'
-      expect(@bluray1.price).to eq('49.99')
+      @cd1.price = 49.99
+      expect(@cd1.price).to eq(49.99)
     end
 
     it 'can read and assign runtime' do
