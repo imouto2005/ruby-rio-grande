@@ -6,7 +6,7 @@ describe Bluray do
     @bluray1 = Bluray.new('Winnie the Pooh', 12.99, 90, 'Piglet', 'Tigger')
   end
 
-  describe Initialization do
+  describe 'Initialization' do
     it 'should be an instance of Bluray' do
       expect(@bluray1).to be_instance_of Bluray
     end
